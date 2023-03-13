@@ -111,7 +111,9 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>${config.file}</suiteXmlFile>
                     </suiteXmlFiles>
-                   
+                   <argLine>
+                        -javaagent:${Cucumber:CameraAccessTest}
+                    </argLine>
                 </configuration>
             </plugin>
             <plugin>
@@ -139,7 +141,9 @@
                             <suiteXmlFiles>
                                 <suiteXmlFile>config/sample-test.testng.xml</suiteXmlFile>
                             </suiteXmlFiles>
-                           
+                           <argLine>
+                        -javaagent:${Cucumber:CameraAccessTest}
+                    </argLine>
                         </configuration>
                     </plugin>
                 </plugins>
