@@ -111,9 +111,7 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>${config.file}</suiteXmlFile>
                     </suiteXmlFiles>
-                    <argLine>
-                        -javaagent:${Cucumber:browserstack-java-sdk:jar}
-                    </argLine>
+                   
                 </configuration>
             </plugin>
             <plugin>
@@ -141,9 +139,7 @@
                             <suiteXmlFiles>
                                 <suiteXmlFile>config/sample-test.testng.xml</suiteXmlFile>
                             </suiteXmlFiles>
-                            <argLine>
-                                -javaagent:${Cucumber:browserstack-java-sdk:jar}
-                            </argLine>
+                           
                         </configuration>
                     </plugin>
                 </plugins>
