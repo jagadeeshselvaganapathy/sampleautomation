@@ -9,11 +9,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.Test;
 
+import java.net.MalformedURLException;
 import java.net.URL;
 
 public class CameraAccessTest {
-	public static void main(String[] args) throws Exception {
+	
+@Test
+private void empId() throws MalformedURLException, InterruptedException {
+
 
 		DesiredCapabilities caps = new DesiredCapabilities();
 
@@ -22,7 +27,7 @@ public class CameraAccessTest {
 		caps.setCapability("browserstack.key", "JybmMjv9aYXwps7TMbpC");
 
        // Set URL of the application under test
-	//	caps.setCapability("app", "bs://e1e0b3b2426ca7d44371c959b979ee1f2015e43f");
+		caps.setCapability("app", "bs://e1e0b3b2426ca7d44371c959b979ee1f2015e43f");
     	
 
        // Specify device and os_version for testing
@@ -40,26 +45,24 @@ public class CameraAccessTest {
 		WebDriver driver = new RemoteWebDriver(new URL("http://hub-cloud.browserstack.com/wd/hub"), caps);
 		Thread.sleep(15000);
 //		   driver.get("calculator_app_url");
-//		   Thread.sleep(5000);
-/*		      driver.findElement(By.id("btn1")).click();
+		   Thread.sleep(5000);
+		      driver.findElement(By.id("btn1")).click();
 		      Thread.sleep(5000);
 		      driver.findElement(By.id("btn2")).click();
 		      Thread.sleep(5000);
 		      driver.findElement(By.id("btn3")).click();
 		      Thread.sleep(5000);
 		      driver.findElement(By.id("btn4")).click();
-	*/	      
+		      
 		      // Get the result and print it
 //		      String result = driver.findElement(By.id("result")).getText();
 //		      System.out.println("Result: " + result);
-		driver.get("https://www.facebook.com/");
+
 //		boolean contains = driver.getCurrentUrl().contains("xyz");
 //		Assert.assertTrue(contains);
 	
 		
-		WebElement element = driver.findElement(By.name("email"));
-		
-		element.sendKeys("jagadeesh");
+	
 
 		// Quit the driver
 		driver.quit();
