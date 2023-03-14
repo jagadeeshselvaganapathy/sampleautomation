@@ -23,8 +23,8 @@ private void empId() throws MalformedURLException, InterruptedException {
 		DesiredCapabilities caps = new DesiredCapabilities();
 
 		// Set your access credentials
-		caps.setCapability("browserstack.user", "jagadeesh_fKpl7b");
-		caps.setCapability("browserstack.key", "JybmMjv9aYXwps7TMbpC");
+		caps.setCapability("browserstack.user", "jagadeesh_Bc7WMr");
+		caps.setCapability("browserstack.key", "RAhWbcP7fxDPHvSqLT7t");
 
        // Set URL of the application under test
 		caps.setCapability("app", "bs://e1e0b3b2426ca7d44371c959b979ee1f2015e43f");
